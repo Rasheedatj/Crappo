@@ -1,4 +1,6 @@
-@media screen and (max-width:420px) {
+
+
+@media screen and (min-width:375px) {
     body{
         width: 100%;   
       
@@ -6,6 +8,10 @@
     .body{
         padding: 0 1em;
     } 
+    header{
+        margin-bottom: .5em;
+        padding: 2em 1em;
+    }
     nav .menu{
         display: none;
     }
@@ -31,8 +37,11 @@
                     translate(5px,-6px);
         
     }
+    .open body{
+        overflow: hidden;
+    }
     .brand_img img{
-        width: 100%;
+        width: 90%;
     }
     .hero_section_1{
         flex-direction: column;

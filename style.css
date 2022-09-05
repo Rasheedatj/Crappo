@@ -21,6 +21,7 @@ body{
     font-weight: 400;
     background-color: var(--darkPurple);
     line-height: 1.5;
+    position: relative;
 }
 
 .body{
@@ -28,8 +29,7 @@ body{
 }
 /* Navigation bar */
 header{
-  padding-top: 1.7em;
-  padding-bottom: 1.7em;
+    padding: 1.7em 2.5em;
 }
 nav{
     display: flex;
@@ -98,6 +98,8 @@ nav .menu button{
 .hamburger_header{
     position: absolute;
     inset: 0;
+    height: 100vh;
+   
     display: none;
     justify-content: center;
     animation: 500ms slideIn linear ;
@@ -233,15 +235,15 @@ nav .menu button{
     display: flex;
     gap: 1rem;
 }
-.hero_section_2 .fa-play{
+.hero_section_2 .img{
     background-color: #4b5563;
     color: var(--blue);
-    height: 6em;
-    width: 6em;
+    height: 4em;
+    width: 4em;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    font-size: 10px;
+    
 }
 .hero_section_2 h1{
     color: var(--accentWhite);

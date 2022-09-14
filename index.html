@@ -174,43 +174,57 @@
       <h1 class="main_heading">
         Trade Securely And Market The High Growth Cryptocurrencies.
       </h1>
-      <div class="flex_boxes" >
-        <div class="box">
+      <div class="flex_boxes" id="boxes" >
+        <div class="box" id="demo" onclick="javascript:myFunction();">
           <img src="./Images/bitcoin_logo.png" alt="bitcoin" />
-          <h1>bitcoin <sup>btc</sup></h1>
-          <p class="paragraph">
+          <h1 id="firstDIV" onclick="javascript:myFunction();">bitcoin <sup>btc</sup></h1>
+          <p class="paragraph"  id="firsttext" onclick="javascript:myFunction();" >
             Digital currency in which a record of transactions is maintained.
           </p>
+          
           <div class="continue">
             <img src="./Images/greater than.svg" alt="continue" />
           </div>
+            <!-- Over button -->
+          <div class="over" id="minebox">
+            <p>start mining</p>
+            <img src="./Images/white_greater.svg" alt="">
+        </div>
         </div>
 
-        <div class="box">
+        <div class="box" id="box1" onclick="javascript:secondFunction();" >
           <img src="./Images/ethereum_logo.png" alt="Ethereum" />
-          <h1>Ethereum <sup>eth</sup></h1>
-          <p class="paragraph">
+          <h1 id="secondDIV" onclick="javascript:secondFunctin();">Ethereum <sup>eth</sup></h1>
+          <p class="paragraph" id="secondtext" onclick="javascript:myyFunction();">
             Blockchain technology to create and run decentralized digital
             applications.
           </p>
+        
           <div class="continue">
             <img src="./Images/greater than.svg" alt="continue" />
           </div>
+            <!-- Over button -->
+          <div class="over" id="minebox">
+            <p>start mining</p>
+            <img src="./Images/white_greater.svg" alt="">
+        </div>
         </div>
 
-        <div class="box" >
+        <div class="box" id="box3" onclick="javascript:thirdFunction();">
           <img src="./Images/litecoin_logo.png" alt="litecoin" />
-          <h1>litecoin <sup>ltc</sup></h1>
-          <p class="paragraph">
+          <h1 id="thirdDIV" onclick="javascript:thirdFunction();">litecoin <sup>ltc</sup></h1>
+          <p class="paragraph" id="thirdtext" onclick="javascript:thirdFunction();">
             Cryptocurrency that enables instant payments to anyone in the world.
           </p>
+         
           <div class="continue">
             <img src="./Images/greater than.svg" alt="continue" />
-            <!-- <div class="over">
-                <p>start mining</p>
-                <img src="./Images/white_greater.svg" alt="">
-            </div> -->
           </div>
+            <!-- Over button -->
+          <div class="over" id="minebox">
+            <p>start mining</p>
+            <img src="./Images/white_greater.svg" alt="">
+        </div>
         </div>
       </div>
     </section>
@@ -351,14 +365,6 @@
       </div>
     </footer>
 
-    <script>
-   const btn = document.getElementById("menu_btn");
-      const nav = document.getElementById("menu");
-
-      btn.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        btn.classList.toggle("open_btn");
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

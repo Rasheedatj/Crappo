@@ -424,6 +424,7 @@ margin-top: 5em;
     gap: 2em;
     border-radius: 20px;
     cursor: pointer;
+    position: relative;
 }
 
 .main_section_2 .box h1{
@@ -431,6 +432,13 @@ margin-top: 5em;
     color: var(--footerColor);
     font-size: 32px;
 }
+
+.myStyle{
+   color: white !important; 
+  }
+.textStyle{
+   color: white !important; 
+  }
 .main_section_2 sup{
     text-transform: uppercase;
     font-size: 18px;
@@ -446,23 +454,35 @@ margin-top: 5em;
    border-radius: 50%;
    display: grid;
    place-items: center;
-   position: relative;
+  
 }
-/* .main_section_2 .over{
+/* .minestyle .continue{
+    display: non;
+} */
+.main_section_2 .over{
     background-color: var(--blue);
     padding:20px 10px;
-    width: 200%;
-    border-radius: 35px;
-    display: flex;
+    width: 60%;
+    border-radius: 40px;
+    display: none;
+    gap: 1em;
     align-items: center;
     justify-content: center;
     text-transform: capitalize;
     color: var(--accentWhite);
     font-size: 25px;
     position: absolute;
-    opacity: 0;
-} */
-
+    bottom: 2em;
+}
+.over img{
+    width: 10%;
+}
+.overstyle .over{
+    display: flex;
+}
+.overstyle .continue{
+    display: none;
+}
 
 
 /* main section 3 */
@@ -562,7 +582,7 @@ margin-top: 5em;
 }
 
 .main_section_5  button{
-    width: 25%;
+    width: 30%;
     background-color: var(--blue);
     border: none;
     color: var(--accentWhite);
@@ -702,7 +722,9 @@ footer .payment .box2 img{
 footer .box2{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 .copyright p{
     color: var(--accentWhite);
     font-size: 18px;
@@ -723,3 +745,4 @@ footer .icons i:hover{
 button{
     cursor: pointer;
 }
+

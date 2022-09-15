@@ -99,12 +99,12 @@ nav .menu button{
     position: absolute;
     inset: 0;
     height: 100vh;
-   
     display: none;
     justify-content: center;
-    animation: 500ms slideIn linear ;
+    animation: 500ms slideIn alternate;
+
     background-color: var(--mobileBackground);
-   
+ 
 }
 
 .mobile_menu{
@@ -141,6 +141,7 @@ nav .menu button{
     0%{
         transform: translateX(100%);
     }
+   
     100%{
         transform: translateX(0%);
     }
@@ -425,7 +426,9 @@ margin-top: 5em;
     border-radius: 20px;
     cursor: pointer;
     position: relative;
+    transition: background 700ms ease;
 }
+
 
 .main_section_2 .box h1{
     text-transform: capitalize;
@@ -456,9 +459,7 @@ margin-top: 5em;
    place-items: center;
   
 }
-/* .minestyle .continue{
-    display: non;
-} */
+
 .main_section_2 .over{
     background-color: var(--blue);
     padding:20px 15px;
@@ -473,6 +474,7 @@ margin-top: 5em;
     font-size: 25px;
     position: absolute;
     bottom: 2em;
+    transition: all 750ms ease;
 }
 .over img{
     width: 10%;
@@ -483,6 +485,7 @@ margin-top: 5em;
 .overstyle .continue{
     display: none;
 }
+
 
 
 /* main section 3 */

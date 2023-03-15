@@ -428,12 +428,20 @@ margin-top: 5em;
     position: relative;
     transition: background 700ms ease;
 }
-
+.main_section_2 .box.colorActive{
+    background-color: #2b076e;
+}
 
 .main_section_2 .box h1{
     text-transform: capitalize;
     color: var(--footerColor);
     font-size: 32px;
+}
+.main_section_2 .box.colorActive h1{
+    color: white;
+}
+.main_section_2 .box.colorActive p{
+    color: #fff;
 }
 
 .myStyle{
@@ -483,7 +491,7 @@ margin-top: 5em;
     display: flex;
 }
 .overstyle .continue{
-    display: none;
+  visibility: hidden;
 }
 
 
@@ -506,6 +514,7 @@ margin-top: 5em;
 }
 .main_section_3 .flex_box{
     display: flex;
+    align-items: center;
 }
 .main_section_3 .flex_box > div{
     width: 50%;
